@@ -26,8 +26,8 @@ export default function FeaturesSection({
 
 }: FeaturesSection) {
   return (
-    <section className="w-full min-h-[90vh] bg-[#141414] flex items-center justify-center px-4 py-10">
-      <div className="max-w-7xl w-full space-y-20">
+    <section className="w-full bg-[#141414] text-white py-10 px-4 md:px-12">
+      <div className="max-w-6xl mx-auto space-y-20">
         {/* Feature 1 */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="bg-gradient-to-br rounded-2xl">
