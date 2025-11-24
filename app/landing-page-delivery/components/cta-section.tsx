@@ -33,9 +33,9 @@ export default function CtaSection({
   bgImage = "/assets/cta-bg-img.png",
 }: CtaSectionProps) {
   return (
-    <section className="w-full py-20 px-4 bg-[#111111] text-white">
+    <section className="w-full min-h-[90vh] bg-[#141414] px-4 py-10">
       <div
-        className="max-w-6xl mx-auto rounded-3xl px-6 py-20 text-center bg-cover bg-no-repeat bg-center"
+        className="max-w-7xl w-full mx-auto rounded-3xl px-6 py-20 text-center bg-cover bg-no-repeat bg-center"
         style={{
           backgroundImage: `url(${bgImage})`,
         }}

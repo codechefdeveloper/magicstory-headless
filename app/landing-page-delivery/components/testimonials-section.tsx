@@ -22,8 +22,8 @@ export default function TestimonialsSection({
   verifiedIcon = "/assets/verified.png",
 }: TestimonialsSectionProps) {
   return (
-    <section className="w-full bg-[#141414] text-white py-20 px-6 md:px-10">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="w-full min-h-[90vh] bg-[#141414] flex items-center justify-center px-4 py-10">
+      <div className="max-w-7xl w-full space-y-20 text-center">
 
         {/* Rating Badge */}
         <p className="text-yellow-400 text-lg font-medium mb-2 flex justify-center gap-2">
