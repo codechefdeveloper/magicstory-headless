@@ -1,6 +1,9 @@
 import { Metadata } from 'next';
 import HeroSection from './components/hero-section';
 import FeaturesSection from './components/features-section';
+import TestimonialsSection from './components/testimonials-section';
+import CTASection from './components/cta-section';
+
 
 export const metadata: Metadata = {
   title: 'Your Landing Page Title | Magic Story',
@@ -17,6 +20,8 @@ export default function LandingPage() {
     <main className="min-h-screen bg-white antialiased">
       <HeroSection />
       <FeaturesSection />
+      <TestimonialsSection />
+      <CTASection />
     </main>
   );
 }

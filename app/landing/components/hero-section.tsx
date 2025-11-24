@@ -18,7 +18,7 @@ export default function HeroSection({
   return (
     <>
       {/* HERO SECTION */}
-      <section className="w-full min-h-[90vh] bg-black flex items-center justify-center px-4 py-10">
+      <section className="w-full min-h-[90vh] bg-[#141414] flex items-center justify-center px-4 py-10">
         <div className="max-w-7xl w-full bg-gradient-to-br from-black via-black/80 to-transparent rounded-[30px] overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-2">
           <div className="p-8 md:p-14 flex flex-col justify-center text-white">
             <div className="flex items-center gap-2 mb-6">
@@ -66,8 +66,8 @@ export default function HeroSection({
       </section>
 
       {/* TRUST BAR - SEPARATE SECTION */}
-      <section className="w-full bg-black">
-        <div className="max-w-5xl mx-auto bg-gradient-to-r from-black/90 via-black/80 to-black/90 rounded-full px-6 py-4 flex flex-col md:flex-row items-center justify-center gap-6 text-white shadow-lg">
+      <section className="w-full bg-[#141414]">
+        <div className="max-w-5xl mx-auto bg-gradient-to-r px-6 py-4 flex flex-col md:flex-row items-center justify-center gap-6 text-white shadow-lg">
           <div className="flex items-center gap-3 text-sm md:text-base font-semibold">
               <Image
                 src={daysIcon}
