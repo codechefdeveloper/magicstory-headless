@@ -23,5 +23,6 @@ export default function LandingPage() {
       <TestimonialsSection />
       <CTASection />
     </main>
+
   );
 }

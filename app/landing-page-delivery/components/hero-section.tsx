@@ -32,12 +32,8 @@ export default function HeroSection({
               {subtitle}
             </p>
             <div>
-              <button
-                data-open-stepper-modal="true"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all"
-              >
-                Create Your Book
-                <svg
+            <button data-open-stepper-modal="true" className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 transition px-6 py-3 rounded-full font-semibold">
+               Learn more <svg
                   stroke="currentColor"
                   fill="currentColor"
                   strokeWidth="0"
@@ -48,7 +44,7 @@ export default function HeroSection({
                 >
                   <path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" />
                 </svg>
-              </button>
+            </button>
             </div>
           </div>
 
@@ -72,8 +68,8 @@ export default function HeroSection({
               <Image
                 src={daysIcon}
                 alt="30-day money back guarantee"
-                width={18}
-                height={18}
+                width={40}
+                height={40}
                 className="object-contain"
               />
             <span>30-day money back guarantee</span>
@@ -83,8 +79,8 @@ export default function HeroSection({
               <Image
                 src={shipsIcon}
                 alt="Ships in 3-5 days globally"
-                width={18}
-                height={18}
+                width={40}
+                height={40}
                 className="object-contain"
               />
             <span>Ships in 3-5 days globally</span>
