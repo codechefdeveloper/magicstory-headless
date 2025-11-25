@@ -41,7 +41,7 @@ interface FeaturesSectionProps {
 export default function FeaturesSection({
   characterTitle = "1. Create your child’s character in under 30 seconds",
   characterDesc = "Upload a photo, and our AI instantly creates a Pixar-style version of your child. No setup, no questionnaires, just instant magic.",
-  characterImage = "/assets/character.png",
+  characterImage = "/assets/ch-1.png",
   characterListHeading = "Here’s how easy it is:",
   characterListOne = "Works with any smartphone photo",
   characterListTwo = "Fully secure and private",
@@ -76,12 +76,12 @@ export default function FeaturesSection({
 }: FeaturesSectionProps) {
   return (
     <section aria-label="Features section" className="w-full min-h-[90vh] bg-[#141414] flex items-center justify-center px-4 py-10">
-      <div className="max-w-7xl w-full space-y-20">
+      <div className="max-w-[1342px] mx-auto px-[16px] py-[48px]">
 
         {/* Feature 1 */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="relative">
-            <Image src={characterImage} alt="Create character" width={600} height={350} className="rounded-xl" />
+            <Image src={characterImage} alt="Create character" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" />
           </div>
 
           <div>

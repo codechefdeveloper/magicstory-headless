@@ -25,7 +25,7 @@ export default function HeroSection({
           <div className="lp-hero-content text-white max-w-[630px]">
               <div className="flex items-center gap-2 mb-[16px]">
               <div className="flex text-yellow-400 text-lg">⭐⭐⭐⭐⭐</div>
-              <a href='#' className="text-[14px] sm:text-[16px] font-extrabold underline">4.9/5 from 2,847+ parents</a>
+              <a href='#' className="font-reddit text-[14px] sm:text-[16px] font-extrabold underline">4.9/5 from 2,847+ parents</a>
             </div>
             <h1 className="font-reddit font-extrabold text-[32px] sm:text-[38px] mb-[16px] leading-[42px] sm:leading-[48px]">{title}</h1>
             <p className='font-wix text-[16px] sm:text-[18px] mb-[32px]'>{subtitle}</p>
@@ -76,7 +76,7 @@ export default function HeroSection({
                 height={40}
                 className="object-contain"
               />
-            <span className="text-[20px] sm:text-[24px] font-extrabold">30-day money back guarantee</span>
+            <span className="font-reddit text-[20px] sm:text-[24px] font-extrabold">30-day money back guarantee</span>
           </div>
 
           <div className="flex items-center gap-[12px] sm:gap-[12px]">
@@ -87,7 +87,7 @@ export default function HeroSection({
                 height={40}
                 className="object-contain"
               />
-            <span className="text-[20px] sm:text-[24px] font-extrabold">Ships in 3-5 days globally</span>
+            <span className="font-reddit text-[20px] sm:text-[24px] font-extrabold">Ships in 3-5 days globally</span>
           </div>
         </div>
       </section>
