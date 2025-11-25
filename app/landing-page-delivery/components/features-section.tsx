@@ -1,5 +1,7 @@
 import Image from "next/image";
+
 interface FeaturesSection {
+  /* FEATURE 1 */
   characterTitle?: string;
   characterDesc?: string;
   characterImage?: string;
@@ -7,12 +9,47 @@ interface FeaturesSection {
   characterListOne?: string;
   characterListTwo?: string;
   characterListThree?: string;
+
+  /* FEATURE 2 */
   dStoriesTitle?: string;
   dStoriesSubTitle?: string;
-  emotionEmporium?: string;
+  dStoriesImage?: string;
 
+  /* FEATURE 3 */
+  ritualTitle?: string;
+  ritualDesc?: string;
+  ritualListHeading?: string;
+  ritualListOne?: string;
+  ritualListTwo?: string;
+  ritualListThree?: string;
+  ritualBottomText?: string;
+  ritualImage?: string;
+
+  /* FEATURE 4 */
+  emotionTitle?: string;
+  emotionDesc?: string;
+  emotionItemOne?: string;
+  emotionItemTwo?: string;
+  emotionItemThree?: string;
+  emotionItemFour?: string;
+  emotionImage?: string;
+
+  /* FEATURE 5 */
+  bondingTitle?: string;
+  bondingParaOne?: string;
+  bondingParaTwo?: string;
+  bondingParaThree?: string;
+  bondingImage?: string;
+
+  /* FEATURE 6 */
+  keepsakeTitle?: string;
+  keepsakeParaOne?: string;
+  keepsakeParaTwo?: string;
+  emotionEmporium?: string;
 }
+
 export default function FeaturesSection({
+  /* FEATURE 1 */
   characterTitle = "1. Create your child’s character in under 30 seconds",
   characterDesc = "Upload a photo, and our AI instantly creates a Pixar-style version of your child. No setup, no questionnaires, just instant magic.",
   characterImage = "/assets/character.png",
@@ -20,40 +57,64 @@ export default function FeaturesSection({
   characterListOne = "Works with any smartphone photo",
   characterListTwo = "Fully secure and private",
   characterListThree = "Stunning, high-quality artwork in minutes",
+
+  /* FEATURE 2 */
   dStoriesTitle = "2. 24 expertly designed stories",
   dStoriesSubTitle = "Find new adventures and learn new lessons across 6 uplifting categories:",
-  emotionEmporium = "/assets/emotion-emporium.png",
+  dStoriesImage = "/assets/designed-stories.png",
 
+  /* FEATURE 3 */
+  ritualTitle = "3. Turn reading into their favorite ritual",
+  ritualDesc = "When your child is the hero, storytime becomes their favorite habit.",
+  ritualListHeading = "With Magic Story books, you nurture:",
+  ritualListOne = "Focus and attention through stories that resonate",
+  ritualListTwo = "Vocabulary growth through repetition",
+  ritualListThree = "A nightly routine they'll both look forward to",
+  ritualBottomText = "Instead of fighting for screen time, you’ll be hearing “just one more chapter.”",
+  ritualImage = "/assets/favorite-ritual.png",
+
+  /* FEATURE 4 */
+  emotionTitle = "4. Build emotional health through storytelling",
+  emotionDesc = "Stories help kids understand the world and themselves.",
+  emotionItemOne = "Confidence: “I can do hard things.”",
+  emotionItemTwo = "Empathy: Helping others matters.",
+  emotionItemThree = "Resilience: Learning from challenges.",
+  emotionItemFour = "Creativity: Seeing the world in new ways.",
+  emotionImage = "/assets/storytelling.png",
+
+  /* FEATURE 5 */
+  bondingTitle = "5. Enjoy screen-free bonding",
+  bondingParaOne = "Reclaim bonding time from screens.",
+  bondingParaTwo = "Magic Story creates ten minutes of calm connection every night, a pause button in a fast-moving world.",
+  bondingParaThree = "Those shared stories turn into lasting memories for both of you.",
+  bondingImage = "/assets/bonding.png",
+
+  /* FEATURE 6 */
+  keepsakeTitle = "6. Create a keepsake you’ll treasure forever",
+  keepsakeParaOne = "Every book is printed with premium materials to last a lifetime.",
+  keepsakeParaTwo = "Years from now, you’ll pull it off the shelf and remember who they were — and the hero they were becoming.",
+  emotionEmporium = "/assets/emotion-emporium.png",
 }: FeaturesSection) {
   return (
     <section className="w-full min-h-[90vh] bg-[#141414] flex items-center justify-center px-4 py-10">
       <div className="max-w-7xl w-full space-y-20">
+
         {/* Feature 1 */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="bg-gradient-to-br rounded-2xl">
-            <Image
-              src={characterImage}
-              alt="Create character"
-              width={600}
-              height={350}
-              className="rounded-xl object-cover"
-            />
+          <div>
+            <Image src={characterImage} alt="Create character" width={600} height={350} className="rounded-xl" />
           </div>
           <div>
-            <h3 className="text-2xl font-bold mb-4">
-              {characterTitle}
-            </h3>
-            <p className="text-gray-300 mb-4">
-              {characterDesc}
-            </p>
-            <h4 className="font-wix font-bold mb-4 text-white">{characterListHeading}</h4>
-            <ul className="space-y-1 text-gray-300">
+            <h3 className="text-2xl font-bold mb-4">{characterTitle}</h3>
+            <p className="text-gray-300 mb-4">{characterDesc}</p>
+            <h4 className="font-bold mb-4">{characterListHeading}</h4>
+            <ul className="space-y-1 text-gray-300 list-disc pl-5">
               <li>{characterListOne}</li>
               <li>{characterListTwo}</li>
               <li>{characterListThree}</li>
             </ul>
-            <button data-open-stepper-modal="true" className="inline-flex items-center gap-2 mt-6 bg-red-600 hover:bg-red-700 transition px-6 py-3 rounded-full font-semibold">
-              Start Building Their Character <svg
+            <button data-open-stepper-modal="true" className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 transition px-6 py-3 mt-4 rounded-full font-semibold">
+               Start Building Their Character <svg
                   stroke="currentColor"
                   fill="currentColor"
                   strokeWidth="0"
@@ -67,61 +128,31 @@ export default function FeaturesSection({
             </button>
           </div>
         </div>
+
         {/* Feature 2 */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h3 className="text-2xl font-bold mb-4">{dStoriesTitle}</h3>
-            <p className="text-gray-300 mb-4">
-              {dStoriesSubTitle}
-            </p>
-            <ul className="space-y-2 text-gray-300">
-              <li><span className="font-bold">1. Conquer Fears:</span> Build bravery and courage.</li>
-              <li><span className="font-bold">2. Celebrate Kindness:</span> Spotlight empathy and caring.</li>
-              <li><span className="font-bold">3. Ignite Imagination:</span> Expand creativity and curiosity.</li>
-              <li><span className="font-bold">4. Build Resilience:</span> Show that setbacks lead to growth.</li>
-              <li><span className="font-bold">5. Boost Confidence:</span> Inspire “I can do hard things.”</li>
-              <li><span className="font-bold">6. Mark Milestones:</span> Celebrate birthdays and achievements.</li>
-            </ul>
+            <p className="text-gray-300 mb-4">{dStoriesSubTitle}</p>
           </div>
-          <div className="flex justify-center">
-            <Image
-              src="/assets/designed-stories.png"
-              alt="24 expertly designed stories"
-              width={600}
-              height={350}
-              className="rounded-2xl object-cover"
-            />
-          </div>
+          <Image src={dStoriesImage} alt="Stories" width={600} height={350} className="rounded-xl" />
         </div>
+
         {/* Feature 3 */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="flex justify-center">
-            <Image
-              src="/assets/favorite-ritual.png"
-              alt="Reading ritual"
-              width={600}
-              height={350}
-              className="rounded-2xl object-cover"
-            />
-          </div>
+          <Image src={ritualImage} alt="Ritual" width={600} height={350} className="rounded-xl" />
           <div>
-            <h3 className="text-2xl font-bold mb-4">
-              3. Turn reading into their favorite ritual
-            </h3>
-            <p className="text-gray-300 mb-4">
-              When your child is the hero, storytime becomes their favorite habit.
-            </p>
-            <h4 className="font-wix font-bold mb-4 text-white">With Magic Story books, you nurture:</h4>
-            <ul className="space-y-1 s text-gray-300 list-disc pl-5 mb-4">
-              <li>Focus and attention through stories that resonate</li>
-              <li>Vocabulary growth through repetition</li>
-              <li>A nightly routine they'll both look forward to</li>
+            <h3 className="text-2xl font-bold mb-4">{ritualTitle}</h3>
+            <p className="text-gray-300 mb-4">{ritualDesc}</p>
+            <h4 className="font-bold mb-4">{ritualListHeading}</h4>
+            <ul className="list-disc pl-5 space-y-1 text-gray-300">
+              <li>{ritualListOne}</li>
+              <li>{ritualListTwo}</li>
+              <li>{ritualListThree}</li>
             </ul>
-             <p className="text-gray-300 mb-4">
-               Instead of fighting for screen time, you’ll be hearing “just one more chapter.”
-            </p>
-            <button data-open-stepper-modal="true" className="inline-flex items-center gap-2 mt-6 bg-red-600 hover:bg-red-700 transition px-6 py-3 rounded-full font-semibold">
-              Build a lifelong habit <svg
+            <p className="text-gray-300 mt-4">{ritualBottomText}</p>
+            <button data-open-stepper-modal="true" className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 transition px-6 py-3 mt-4 rounded-full font-semibold">
+                  Build a lifelong habit <svg
                   stroke="currentColor"
                   fill="currentColor"
                   strokeWidth="0"
@@ -139,54 +170,28 @@ export default function FeaturesSection({
         {/* Feature 4 */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h3 className="text-2xl font-bold mb-4">
-              4. Build emotional health through storytelling
-            </h3>
-            <p className="text-gray-300 mb-4">
-              Stories help kids understand the world and themselves.
-            </p>
-            <ul className="space-y-2 text-gray-300 list-disc pl-5">
-              <li><span className="font-bold">Confidence:</span> “I can do hard things.”</li>
-              <li><span className="font-bold">Empathy:</span> Helping others matters.</li>
-              <li><span className="font-bold">Resilience:</span> Learning from challenges.</li>
-              <li><span className="font-bold">Creativity:</span> Seeing the world in new ways.</li>
+            <h3 className="text-2xl font-bold mb-4">{emotionTitle}</h3>
+            <p className="text-gray-300 mb-4">{emotionDesc}</p>
+            <ul className="list-disc pl-5 space-y-2 text-gray-300">
+              <li>{emotionItemOne}</li>
+              <li>{emotionItemTwo}</li>
+              <li>{emotionItemThree}</li>
+              <li>{emotionItemFour}</li>
             </ul>
           </div>
-          <div className="flex justify-center">
-            <Image
-              src="/assets/storytelling.png"
-              alt="Emotional health"
-              width={600}
-              height={350}
-              className="rounded-2xl object-cover"
-            />
-          </div>
+          <Image src={emotionImage} alt="Emotion" width={600} height={350} className="rounded-xl" />
         </div>
 
         {/* Feature 5 */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="flex justify-center">
-            <Image
-              src="/assets/bonding.png"
-              alt="Screen free bonding"
-              width={600}
-              height={350}
-              className="rounded-2xl object-cover"
-            />
-          </div>
+          <Image src={bondingImage} alt="Bonding" width={600} height={350} className="rounded-xl" />
           <div>
-            <h3 className="text-2xl font-bold mb-4">5. Enjoy screen-free bonding</h3>
-            <p className="text-gray-300">
-              Reclaim bonding time from screens.
-            </p>
-            <p className="text-gray-300">
-              Magic Story creates ten minutes of calm connection every night, a pause button in a fast-moving world.
-            </p>
-            <p className="text-gray-300 mb-6">
-              Those shared stories turn into lasting memories for both of you.
-            </p>
-            <button data-open-stepper-modal="true" className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 transition px-6 py-3 rounded-full font-semibold">
-              Start Building Their Character <svg
+            <h3 className="text-2xl font-bold mb-4">{bondingTitle}</h3>
+            <p className="text-gray-300">{bondingParaOne}</p>
+            <p className="text-gray-300">{bondingParaTwo}</p>
+            <p className="text-gray-300">{bondingParaThree}</p>
+             <button data-open-stepper-modal="true" className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 transition px-6 py-3 mt-4 rounded-full font-semibold">
+                  Start Building Their Character <svg
                   stroke="currentColor"
                   fill="currentColor"
                   strokeWidth="0"
@@ -199,41 +204,20 @@ export default function FeaturesSection({
                 </svg>
             </button>
           </div>
+
         </div>
-         {/* Feature 6 */}
-        <div
-            className="grid md:grid-cols-2 gap-10 items-center bg-cover bg-center rounded-3xl p-10"
-            style={{
-                backgroundImage: `url('/assets/bg_img-01.jpg')`,
-            }}
-            >
-            {/* LEFT TEXT */}
-            <div>
-                <h3 className="text-2xl font-bold mb-4">
-                6. Create a keepsake you’ll treasure forever
-                </h3>
 
-                <p className="text-lg opacity-90 mb-4">
-                Every book is printed with premium materials to last a lifetime.
-                </p>
-
-                <p className="text-lg opacity-90">
-                Years from now, you’ll pull it off the shelf and remember who they were —
-                and the hero they were becoming.
-                </p>
-            </div>
-
-            {/* RIGHT IMAGE */}
-            <div className="flex justify-center md:justify-end">
-                <Image
-                src={emotionEmporium}
-                alt="Books"
-                width={400}
-                height={400}
-                className="rounded-xl"
-                />
-            </div>
+        {/* Feature 6 */}
+        <div className="grid md:grid-cols-2 gap-10 items-center bg-cover bg-center rounded-3xl p-10"
+             style={{ backgroundImage: `url('/assets/bg_img-01.jpg')` }}>
+          <div>
+            <h3 className="text-2xl font-bold mb-4">{keepsakeTitle}</h3>
+            <p className="text-lg opacity-90 mb-4">{keepsakeParaOne}</p>
+            <p className="text-lg opacity-90">{keepsakeParaTwo}</p>
+          </div>
+          <Image src={emotionEmporium} alt="Books" width={400} height={400} className="rounded-xl" />
         </div>
+
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import './styles/landing-page.css';
 import HeroSection from './components/hero-section';
 import FeaturesSection from './components/features-section';
 import TestimonialsSection from './components/testimonials-section';
