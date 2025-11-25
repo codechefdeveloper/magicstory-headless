@@ -3,6 +3,9 @@
 import "./styles/landing-page.css";
 import dynamic from "next/dynamic";
 import HeroSection from "./components/hero-section";
+import "@fontsource/reddit-sans";
+import "@fontsource/reddit-sans/600.css";
+import "@fontsource/reddit-sans/700.css";
 
 const FeaturesSection = dynamic(
   () => import("./components/features-section"),
