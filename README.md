@@ -1,10 +1,8 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
-
-First, run the development server:
-
 ```bash
+To start dev server run below commands
 npm run dev
 # or
 yarn dev
@@ -12,6 +10,19 @@ yarn dev
 pnpm dev
 # or
 bun dev
+
+You can follow below commands from scratch
+initial command when setup project first time
+npm install
+
+Then install next.js 14.2
+npm install next@14.2 react react-dom
+
+Then install tailwindcss 3 which is compatible with next14.2
+npm install -D tailwindcss@3.4.14 postcss autoprefixer
+
+start tailwindcss
+npx tailwindcss init -p
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
