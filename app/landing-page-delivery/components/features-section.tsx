@@ -85,7 +85,7 @@ export default function FeaturesSection({
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold mb-4">{characterTitle}</h3>
+             <h3 className="font-reddit font-extrabold text-white text-[28px] sm:text-[36px] leading-[130%] mb-[16px] sm:mb-[24px]">{characterTitle}</h3>
             <p className="text-gray-300 mb-4">{characterDesc}</p>
             <h4 className="font-bold mb-4">{characterListHeading}</h4>
             <ul className="space-y-1 text-gray-300 list-disc pl-5">
