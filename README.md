@@ -23,6 +23,9 @@ npm install -D tailwindcss@3.4.14 postcss autoprefixer
 
 start tailwindcss
 npx tailwindcss init -p
+
+Dependency::
+npm install @fontsource/reddit-sans
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

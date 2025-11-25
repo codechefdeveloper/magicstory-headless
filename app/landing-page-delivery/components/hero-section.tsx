@@ -66,16 +66,28 @@ export default function HeroSection({
   
       </section>
       {/* TRUST BAR */}
-      <section aria-label="Trust bar" className="w-full bg-[#141414]">
-        <div className="max-w-5xl mx-auto bg-gradient-to-r px-6 py-4 flex flex-col md:flex-row items-center justify-center gap-6 text-white shadow-lg rounded-2xl">
-          <div className="flex items-center gap-3 text-sm md:text-base font-semibold">
-            <Image src={daysIcon} alt="30-day guarantee" width={40} height={40} className="object-contain" />
-            <span>30-day money back guarantee</span>
+      <section className="w-full bg-[#141414]">
+        <div className="max-w-[1342px] mx-auto px-[16px] py-[24px] flex flex-col sm:flex-row justify-center gap-[10px] sm:gap-[48px] text-white">
+          <div className="flex items-center gap-[12px] sm:gap-[12px] ">
+              <Image
+                src={daysIcon}
+                alt="30-day money back guarantee"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
+            <span className="text-[20px] sm:text-[24px] font-extrabold">30-day money back guarantee</span>
           </div>
 
-          <div className="flex items-center gap-3 text-sm md:text-base font-semibold">
-            <Image src={shipsIcon} alt="Ships in 3-5 days globally" width={40} height={40} className="object-contain" />
-            <span>Ships in 3-5 days globally</span>
+          <div className="flex items-center gap-[12px] sm:gap-[12px]">
+              <Image
+                src={shipsIcon}
+                alt="Ships in 3-5 days globally"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
+            <span className="text-[20px] sm:text-[24px] font-extrabold">Ships in 3-5 days globally</span>
           </div>
         </div>
       </section>
