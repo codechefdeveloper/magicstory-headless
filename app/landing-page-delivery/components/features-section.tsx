@@ -56,23 +56,23 @@ export default function FeaturesSection({
   ritualListTwo = "Vocabulary growth through repetition",
   ritualListThree = "A nightly routine they'll both look forward to",
   ritualBottomText = "Instead of fighting for screen time, you’ll be hearing “just one more chapter.”",
-  ritualImage = "/assets/favorite-ritual.png",
+  ritualImage = "/assets/ritualImage.png",
   emotionTitle = "4. Build emotional health through storytelling",
   emotionDesc = "Stories help kids understand the world and themselves.",
   emotionItemOne = "Confidence: “I can do hard things.”",
   emotionItemTwo = "Empathy: Helping others matters.",
   emotionItemThree = "Resilience: Learning from challenges.",
   emotionItemFour = "Creativity: Seeing the world in new ways.",
-  emotionImage = "/assets/storytelling.png",
+  emotionImage = "/assets/emotionImage.png",
   bondingTitle = "5. Enjoy screen-free bonding",
   bondingParaOne = "Reclaim bonding time from screens.",
   bondingParaTwo = "Magic Story creates ten minutes of calm connection every night, a pause button in a fast-moving world.",
   bondingParaThree = "Those shared stories turn into lasting memories for both of you.",
-  bondingImage = "/assets/bonding.png",
+  bondingImage = "/assets/bondingImage.png",
   keepsakeTitle = "6. Create a keepsake you’ll treasure forever",
   keepsakeParaOne = "Every book is printed with premium materials to last a lifetime.",
   keepsakeParaTwo = "Years from now, you’ll pull it off the shelf and remember who they were — and the hero they were becoming.",
-  emotionEmporium = "/assets/emotion-emporium.png",
+  emotionEmporium = "/assets/emotionEmporium_img.png",
 }: FeaturesSectionProps) {
   return (
     <section aria-label="Features section" className="w-full min-h-[90vh] bg-[#141414] flex items-center justify-center">
@@ -139,31 +139,31 @@ export default function FeaturesSection({
               <li>Mark Milestones: Celebrate birthdays, holidays, and big life moments.</li>
             </ul>
           </div>
-          <div className="relative">
+          <div className="relative order-first sm:order-last">
             <Image src={dStoriesImage} alt="Stories" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" />
           </div>
         </div>
 
         {/* Feature 3 */}
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="py-[48px] sm:py-[64px] grid md:grid-cols-2 gap-[24px] sm:gap-[64px] items-center">
           <div className="relative">
-            <Image src={ritualImage} alt="Ritual" width={600} height={350} className="rounded-xl" />
+            <Image src={ritualImage} alt="Ritual" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" />
           </div>
           <div>
-            <h3 className="text-2xl font-bold mb-4">{ritualTitle}</h3>
-            <p className="text-gray-300 mb-4">{ritualDesc}</p>
-            <h4 className="font-bold mb-4">{ritualListHeading}</h4>
-            <ul className="list-disc pl-5 space-y-1 text-gray-300">
+            <h3 className="font-reddit font-extrabold text-white text-[28px] sm:text-[36px] leading-[130%] mb-[16px] sm:mb-[24px]">{ritualTitle}</h3>
+            <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{ritualDesc}</p>
+            <h4 className="font-reddit font-extrabold text-white text-[16px] sm:text-[18px] leading-[150%] mb-[8px] sm:mb-[16px]">{ritualListHeading}</h4>
+            <ul className="font-reddit text-[#DADADA] text-[16px] sm:text-[18px] space-y-1 list-disc pl-[20px] mb-[8px] sm:mb-[16px]">
               <li>{ritualListOne}</li>
               <li>{ritualListTwo}</li>
               <li>{ritualListThree}</li>
             </ul>
-            <p className="text-gray-300 mt-4">{ritualBottomText}</p>
+            <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[24px] sm:mb-[32px]">{ritualBottomText}</p>
              <button
                 type="button"
                 data-open-stepper-modal="true"
                 aria-label="Build a lifelong habit"
-                className="relative font-reddit text-[18px] font-extrabold px-8 py-[13px] rounded-full bg-[#CC0033] text-white shadow-[3px_5px_10px_0px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-[1.02] hover:bg-red-700 hover:shadow-[4px_6px_12px_0px_rgba(0,0,0,0.2)] active:scale-[0.98] group overflow-hidden mt-4"
+                className="relative font-reddit text-[18px] font-extrabold px-8 py-[13px] rounded-full bg-[#CC0033] text-white shadow-[3px_5px_10px_0px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-[1.02] hover:bg-red-700 hover:shadow-[4px_6px_12px_0px_rgba(0,0,0,0.2)] active:scale-[0.98] group overflow-hidden"
               >
                 <div className="absolute inset-0 animate-shimmer bg-gradient-to-r from-transparent via-orange-400/40 to-transparent opacity-100"></div>
 
@@ -190,32 +190,32 @@ export default function FeaturesSection({
         </div>
 
         {/* Feature 4 */}
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="py-[48px] sm:py-[64px] grid md:grid-cols-2 gap-[24px] sm:gap-[64px] items-center">
           <div>
-            <h3 className="text-2xl font-bold mb-4">{emotionTitle}</h3>
-            <p className="text-gray-300 mb-4">{emotionDesc}</p>
-            <ul className="list-disc pl-5 space-y-2 text-gray-300">
+            <h3 className="font-reddit font-extrabold text-white text-[28px] sm:text-[36px] leading-[130%] mb-[16px] sm:mb-[24px]">{emotionTitle}</h3>
+            <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{emotionDesc}</p>
+            <ul className="font-reddit text-[#DADADA] text-[16px] sm:text-[18px] space-y-1 list-disc pl-[20px] mb-[24px] sm:mb-[32px]">
               <li>{emotionItemOne}</li>
               <li>{emotionItemTwo}</li>
               <li>{emotionItemThree}</li>
               <li>{emotionItemFour}</li>
             </ul>
           </div>
-          <div className="relative">
-            <Image src={emotionImage} alt="Emotion" width={600} height={350} className="rounded-xl" />
+          <div className="relative order-first sm:order-last">
+            <Image src={emotionImage} alt="Emotion" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" />
           </div>
         </div>
 
         {/* Feature 5 */}
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="py-[48px] sm:py-[64px] grid md:grid-cols-2 gap-[24px] sm:gap-[64px] items-center">
           <div className="relative">
-            <Image src={bondingImage} alt="Bonding" width={600} height={350} className="rounded-xl" />
+            <Image src={bondingImage} alt="Bonding" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" />
           </div>
           <div>
-            <h3 className="text-2xl font-bold mb-4">{bondingTitle}</h3>
-            <p className="text-gray-300">{bondingParaOne}</p>
-            <p className="text-gray-300">{bondingParaTwo}</p>
-            <p className="text-gray-300">{bondingParaThree}</p>
+            <h3 className="font-reddit font-extrabold text-white text-[28px] sm:text-[36px] leading-[130%] mb-[16px] sm:mb-[24px]">{bondingTitle}</h3>
+            <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{bondingParaOne}</p>
+            <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{bondingParaTwo}</p>
+            <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{bondingParaThree}</p>
             <button
                 type="button"
                 data-open-stepper-modal="true"
@@ -249,12 +249,12 @@ export default function FeaturesSection({
         {/* Feature 6 */}
         <div className="grid md:grid-cols-2 gap-10 items-center bg-cover bg-center rounded-3xl p-10 relative" style={{ backgroundImage: `url('/assets/bg_img-01.jpg')` }}>
           <div>
-            <h3 className="text-2xl font-bold mb-4">{keepsakeTitle}</h3>
-            <p className="text-lg opacity-90 mb-4">{keepsakeParaOne}</p>
-            <p className="text-lg opacity-90">{keepsakeParaTwo}</p>
+            <h3 className="font-reddit font-extrabold text-white text-[28px] sm:text-[36px] leading-[130%] mb-[16px] sm:mb-[24px]">{keepsakeTitle}</h3>
+            <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{keepsakeParaOne}</p>
+            <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{keepsakeParaTwo}</p>
           </div>
-          <div className="relative w-72 h-72">
-            <Image src={emotionEmporium} alt="Books" fill className="object-cover rounded-xl" />
+          <div className="text-center">
+            <Image src={emotionEmporium} alt="Books" width={476} height={476} className="inline-block rounded-[14px] sm:round-[24px] max-w-full" />
           </div>
         </div>
 
