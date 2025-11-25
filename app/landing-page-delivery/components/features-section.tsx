@@ -87,8 +87,8 @@ export default function FeaturesSection({
           <div>
              <h3 className="font-reddit font-extrabold text-white text-[28px] sm:text-[36px] leading-[130%] mb-[16px] sm:mb-[24px]">{characterTitle}</h3>
             <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{characterDesc}</p>
-            <h4 className="font-wix text-white text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{characterListHeading}</h4>
-            <ul className="space-y-1 text-gray-300 list-disc pl-5">
+            <h4 className="font-reddit font-extrabold text-white text-[16px] sm:text-[18px] leading-[150%] mb-[8px] sm:mb-[16px]">{characterListHeading}</h4>
+            <ul className="font-reddit text-[#DADADA] text-[16px] sm:text-[18px] space-y-1 list-disc pl-[20px] mb-[24px] sm:mb-[32px]">
               <li>{characterListOne}</li>
               <li>{characterListTwo}</li>
               <li>{characterListThree}</li>
@@ -97,7 +97,7 @@ export default function FeaturesSection({
                 type="button"
                 data-open-stepper-modal="true"
                 aria-label="Start Building Their Character"
-                className="relative font-reddit text-[18px] font-extrabold px-8 py-[13px] rounded-full bg-[#CC0033] text-white shadow-[3px_5px_10px_0px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-[1.02] hover:bg-red-700 hover:shadow-[4px_6px_12px_0px_rgba(0,0,0,0.2)] active:scale-[0.98] group overflow-hidden mt-4"
+                className="relative font-reddit text-[18px] font-extrabold px-8 py-[13px] rounded-full bg-[#CC0033] text-white shadow-[3px_5px_10px_0px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-[1.02] hover:bg-red-700 hover:shadow-[4px_6px_12px_0px_rgba(0,0,0,0.2)] active:scale-[0.98] group overflow-hidden"
               >
                 <div className="absolute inset-0 animate-shimmer bg-gradient-to-r from-transparent via-orange-400/40 to-transparent opacity-100"></div>
 
@@ -126,13 +126,21 @@ export default function FeaturesSection({
         </div>
 
         {/* Feature 2 */}
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="py-[48px] sm:py-[64px] grid md:grid-cols-2 gap-[24px] sm:gap-[64px] items-center">
           <div>
-            <h3 className="text-2xl font-bold mb-4">{dStoriesTitle}</h3>
-            <p className="text-gray-300 mb-4">{dStoriesSubTitle}</p>
+            <h3 className="font-reddit font-extrabold text-white text-[28px] sm:text-[36px] leading-[130%] mb-[16px] sm:mb-[24px]">{dStoriesTitle}</h3>
+            <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{dStoriesSubTitle}</p>
+            <ul className="font-reddit text-[#DADADA] text-[16px] sm:text-[18px] space-y-1 list-decimal pl-[20px] mb-[24px] sm:mb-[32px]">
+              <li>Conquer Fears: Build bravery and courage.</li>
+              <li>Celebrate Kindness: Spotlight empathy and caring.</li>
+              <li>Ignite Imagination: Expand creativity and curiosity.</li>
+              <li>Build Resilience: Show that setbacks lead to growth.</li>
+              <li>Boost Confidence: Inspire “I can do hard things.”</li>
+              <li>Mark Milestones: Celebrate birthdays, holidays, and big life moments.</li>
+            </ul>
           </div>
           <div className="relative">
-            <Image src={dStoriesImage} alt="Stories" width={600} height={350} className="rounded-xl" />
+            <Image src={dStoriesImage} alt="Stories" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" />
           </div>
         </div>
 
