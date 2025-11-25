@@ -34,7 +34,7 @@ export default function HeroSection({
                 type="button"
                 data-open-stepper-modal="true"
                 aria-label={buttonLabel}
-                className="relative font-reddit text-[18px] font-extrabold px-8 py-[13px] rounded-full bg-[#CC0033] text-white shadow-[3px_5px_10px_0px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-[1.02] hover:bg-red-700 hover:shadow-[4px_6px_12px_0px_rgba(0,0,0,0.2)] active:scale-[0.98] group overflow-hidden"
+                className="w-full sm:w-auto relative font-reddit text-[18px] font-extrabold px-8 py-[13px] rounded-full bg-[#CC0033] text-white shadow-[3px_5px_10px_0px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-[1.02] hover:bg-red-700 hover:shadow-[4px_6px_12px_0px_rgba(0,0,0,0.2)] active:scale-[0.98] group overflow-hidden"
               >
                 <div className="absolute inset-0 animate-shimmer bg-gradient-to-r from-transparent via-orange-400/40 to-transparent opacity-100"></div>
  
@@ -75,6 +75,7 @@ export default function HeroSection({
                 width={40}
                 height={40}
                 className="object-contain"
+                priority
               />
             <span className="font-reddit text-[20px] sm:text-[24px] font-extrabold">30-day money back guarantee</span>
           </div>
@@ -86,6 +87,7 @@ export default function HeroSection({
                 width={40}
                 height={40}
                 className="object-contain"
+                priority
               />
             <span className="font-reddit text-[20px] sm:text-[24px] font-extrabold">Ships in 3-5 days globally</span>
           </div>

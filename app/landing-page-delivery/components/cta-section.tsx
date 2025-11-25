@@ -34,7 +34,7 @@ export default function CtaSection({
 
         {/* Background image using next/image for performance */}
         <div className="absolute inset-0 -z-10">
-          <Image src={bgImage} alt="cta background" fill className="object-cover" />
+          <Image src={bgImage} alt="cta background" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-black/50" />
         </div>
 
@@ -72,17 +72,17 @@ export default function CtaSection({
 
       <div className="max-w-6xl mx-auto mt-10 grid md:grid-cols-3 gap-6 text-center">
         <div className="flex items-center justify-center gap-2 font-semibold text-gray-200">
-          <Image src={guaranteeIcon} alt="guarantee" width={40} height={40} />
+          <Image src={guaranteeIcon} alt="guarantee" width={40} height={40} priority />
           <p className="text-sm md:text-base">{guaranteeText}</p>
         </div>
 
         <div className="flex items-center justify-center gap-2 font-semibold text-gray-200">
-          <Image src={shippingIcon} alt="shipping" width={40} height={40} />
+          <Image src={shippingIcon} alt="shipping" width={40} height={40} priority />
           <p className="text-sm md:text-base">{shippingText}</p>
         </div>
 
         <div className="flex items-center justify-center gap-2 font-semibold text-gray-200">
-          <Image src={qualityIcon} alt="quality" width={40} height={40} />
+          <Image src={qualityIcon} alt="quality" width={40} height={40} priority />
           <p className="text-sm md:text-base">{qualityText}</p>
         </div>
       </div>

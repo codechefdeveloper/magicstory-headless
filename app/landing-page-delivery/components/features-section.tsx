@@ -81,7 +81,7 @@ export default function FeaturesSection({
         {/* Feature 1 */}
         <div className="py-[48px] sm:py-[64px] grid md:grid-cols-2 gap-[24px] sm:gap-[64px] items-center">
           <div className="relative">
-            <Image src={characterImage} alt="Create character" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" />
+            <Image src={characterImage} alt="Create character" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" priority/>
           </div>
 
           <div>
@@ -97,7 +97,7 @@ export default function FeaturesSection({
                 type="button"
                 data-open-stepper-modal="true"
                 aria-label="Start Building Their Character"
-                className="relative font-reddit text-[18px] font-extrabold px-8 py-[13px] rounded-full bg-[#CC0033] text-white shadow-[3px_5px_10px_0px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-[1.02] hover:bg-red-700 hover:shadow-[4px_6px_12px_0px_rgba(0,0,0,0.2)] active:scale-[0.98] group overflow-hidden"
+                className="w-full sm:w-auto relative font-reddit text-[18px] font-extrabold px-8 py-[13px] rounded-full bg-[#CC0033] text-white shadow-[3px_5px_10px_0px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-[1.02] hover:bg-red-700 hover:shadow-[4px_6px_12px_0px_rgba(0,0,0,0.2)] active:scale-[0.98] group overflow-hidden"
               >
                 <div className="absolute inset-0 animate-shimmer bg-gradient-to-r from-transparent via-orange-400/40 to-transparent opacity-100"></div>
 
@@ -140,14 +140,14 @@ export default function FeaturesSection({
             </ul>
           </div>
           <div className="relative order-first sm:order-last">
-            <Image src={dStoriesImage} alt="Stories" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" />
+            <Image src={dStoriesImage} alt="Stories" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" priority />
           </div>
         </div>
 
         {/* Feature 3 */}
         <div className="py-[48px] sm:py-[64px] grid md:grid-cols-2 gap-[24px] sm:gap-[64px] items-center">
           <div className="relative">
-            <Image src={ritualImage} alt="Ritual" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" />
+            <Image src={ritualImage} alt="Ritual" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" priority />
           </div>
           <div>
             <h3 className="font-reddit font-extrabold text-white text-[28px] sm:text-[36px] leading-[130%] mb-[16px] sm:mb-[24px]">{ritualTitle}</h3>
@@ -163,7 +163,7 @@ export default function FeaturesSection({
                 type="button"
                 data-open-stepper-modal="true"
                 aria-label="Build a lifelong habit"
-                className="relative font-reddit text-[18px] font-extrabold px-8 py-[13px] rounded-full bg-[#CC0033] text-white shadow-[3px_5px_10px_0px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-[1.02] hover:bg-red-700 hover:shadow-[4px_6px_12px_0px_rgba(0,0,0,0.2)] active:scale-[0.98] group overflow-hidden"
+                className="w-full sm:w-auto relative font-reddit text-[18px] font-extrabold px-8 py-[13px] rounded-full bg-[#CC0033] text-white shadow-[3px_5px_10px_0px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-[1.02] hover:bg-red-700 hover:shadow-[4px_6px_12px_0px_rgba(0,0,0,0.2)] active:scale-[0.98] group overflow-hidden"
               >
                 <div className="absolute inset-0 animate-shimmer bg-gradient-to-r from-transparent via-orange-400/40 to-transparent opacity-100"></div>
 
@@ -202,14 +202,14 @@ export default function FeaturesSection({
             </ul>
           </div>
           <div className="relative order-first sm:order-last">
-            <Image src={emotionImage} alt="Emotion" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" />
+            <Image src={emotionImage} alt="Emotion" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" priority />
           </div>
         </div>
 
         {/* Feature 5 */}
-        <div className="py-[48px] sm:py-[64px] grid md:grid-cols-2 gap-[24px] sm:gap-[64px] items-center">
+        <div className="py-[48px] sm:py-[64px] grid md:grid-cols-2 gap-[24px] sm:gap-[64px] items-center mb-[40px]">
           <div className="relative">
-            <Image src={bondingImage} alt="Bonding" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" />
+            <Image src={bondingImage} alt="Bonding" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" priority />
           </div>
           <div>
             <h3 className="font-reddit font-extrabold text-white text-[28px] sm:text-[36px] leading-[130%] mb-[16px] sm:mb-[24px]">{bondingTitle}</h3>
@@ -220,7 +220,7 @@ export default function FeaturesSection({
                 type="button"
                 data-open-stepper-modal="true"
                 aria-label="Start Building Their Character"
-                className="relative font-reddit text-[18px] font-extrabold px-8 py-[13px] rounded-full bg-[#CC0033] text-white shadow-[3px_5px_10px_0px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-[1.02] hover:bg-red-700 hover:shadow-[4px_6px_12px_0px_rgba(0,0,0,0.2)] active:scale-[0.98] group overflow-hidden mt-4"
+                className="w-full sm:w-auto relative font-reddit text-[18px] font-extrabold px-8 py-[13px] rounded-full bg-[#CC0033] text-white shadow-[3px_5px_10px_0px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-[1.02] hover:bg-red-700 hover:shadow-[4px_6px_12px_0px_rgba(0,0,0,0.2)] active:scale-[0.98] group overflow-hidden mt-4"
               >
                 <div className="absolute inset-0 animate-shimmer bg-gradient-to-r from-transparent via-orange-400/40 to-transparent opacity-100"></div>
 
@@ -247,14 +247,14 @@ export default function FeaturesSection({
         </div>
 
         {/* Feature 6 */}
-        <div className="grid md:grid-cols-2 gap-10 items-center bg-cover bg-center rounded-3xl p-10 relative" style={{ backgroundImage: `url('/assets/bg_img-01.jpg')` }}>
+        <div className="grid md:grid-cols-2 gap-10 items-center bg-cover bg-center rounded-3xl relative py-[32px] sm:py-[48px] px-[16px] sm:px-[48px] bg-[url('/assets/keepshake-bg-mobile.png')] sm:bg-[url('/assets/bg_img-01.jpg')]" >
           <div>
             <h3 className="font-reddit font-extrabold text-white text-[28px] sm:text-[36px] leading-[130%] mb-[16px] sm:mb-[24px]">{keepsakeTitle}</h3>
             <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{keepsakeParaOne}</p>
             <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{keepsakeParaTwo}</p>
           </div>
           <div className="text-center">
-            <Image src={emotionEmporium} alt="Books" width={476} height={476} className="inline-block rounded-[14px] sm:round-[24px] max-w-full" />
+            <Image src={emotionEmporium} alt="Books" width={476} height={476} className="inline-block max-w-full" priority />
           </div>
         </div>
 
