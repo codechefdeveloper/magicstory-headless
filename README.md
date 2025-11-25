@@ -26,6 +26,7 @@ npx tailwindcss init -p
 
 Dependency::
 npm install @fontsource/reddit-sans
+npm install @fontsource/wix-madefor-text
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

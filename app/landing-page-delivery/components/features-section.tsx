@@ -75,19 +75,19 @@ export default function FeaturesSection({
   emotionEmporium = "/assets/emotion-emporium.png",
 }: FeaturesSectionProps) {
   return (
-    <section aria-label="Features section" className="w-full min-h-[90vh] bg-[#141414] flex items-center justify-center px-4 py-10">
-      <div className="max-w-[1342px] mx-auto px-[16px] py-[48px]">
+    <section aria-label="Features section" className="w-full min-h-[90vh] bg-[#141414] flex items-center justify-center">
+      <div className="max-w-[1342px] mx-auto px-[16px]">
 
         {/* Feature 1 */}
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="py-[48px] sm:py-[64px] grid md:grid-cols-2 gap-[24px] sm:gap-[64px] items-center">
           <div className="relative">
             <Image src={characterImage} alt="Create character" width={1000} height={1000} className="rounded-[14px] sm:round-[24px] max-w-full w-[100%]" />
           </div>
 
           <div>
              <h3 className="font-reddit font-extrabold text-white text-[28px] sm:text-[36px] leading-[130%] mb-[16px] sm:mb-[24px]">{characterTitle}</h3>
-            <p className="text-gray-300 mb-4">{characterDesc}</p>
-            <h4 className="font-bold mb-4">{characterListHeading}</h4>
+            <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{characterDesc}</p>
+            <h4 className="font-wix text-white text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{characterListHeading}</h4>
             <ul className="space-y-1 text-gray-300 list-disc pl-5">
               <li>{characterListOne}</li>
               <li>{characterListTwo}</li>
