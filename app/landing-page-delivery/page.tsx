@@ -1,21 +1,35 @@
-import { Metadata } from 'next';
-import './styles/landing-page.css';
-import HeroSection from './components/hero-section';
-import FeaturesSection from './components/features-section';
-import TestimonialsSection from './components/testimonials-section';
-import CTASection from './components/cta-section';
+"use client";
 
+import "./styles/landing-page.css";
+import dynamic from "next/dynamic";
+import HeroSection from "./components/hero-section";
 
-export const metadata: Metadata = {
-  title: 'Your Landing Page Title | Magic Story',
-  description: 'Your compelling meta description here',
-  openGraph: {
-    title: 'Your Landing Page Title',
-    description: 'Your compelling meta description here',
-    images: ['/assets/og-image.png'],
-  },
-};
-
+const FeaturesSection = dynamic(
+  () => import("./components/features-section"),
+  {
+    loading: () => (
+      <div className="py-20 text-center text-white">Loading features...</div>
+    ),
+    ssr: false,
+  }
+);
+const TestimonialsSection = dynamic(
+  () => import("./components/testimonials-section"),
+  {
+    loading: () => (
+      <div className="py-20 text-center text-white">
+        Loading testimonials...
+      </div>
+    ),
+    ssr: false,
+  }
+);
+const CTASection = dynamic(() => import("./components/cta-section"), {
+  loading: () => (
+    <div className="py-20 text-center text-white">Loading CTA...</div>
+  ),
+  ssr: false,
+});
 export default function LandingPage() {
   return (
     <main className="min-h-screen bg-white antialiased">
@@ -24,6 +38,5 @@ export default function LandingPage() {
       <TestimonialsSection />
       <CTASection />
     </main>
-
   );
 }
