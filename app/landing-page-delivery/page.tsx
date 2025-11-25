@@ -6,6 +6,8 @@ import HeroSection from "./components/hero-section";
 import "@fontsource/reddit-sans";
 import "@fontsource/reddit-sans/600.css";
 import "@fontsource/reddit-sans/700.css";
+import "@fontsource/wix-madefor-text/400.css";
+import "@fontsource/wix-madefor-text/700.css";
 
 const FeaturesSection = dynamic(
   () => import("./components/features-section"),

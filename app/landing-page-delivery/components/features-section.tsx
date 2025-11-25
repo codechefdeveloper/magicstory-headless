@@ -48,7 +48,7 @@ export default function FeaturesSection({
   characterListThree = "Stunning, high-quality artwork in minutes",
   dStoriesTitle = "2. 24 expertly designed stories",
   dStoriesSubTitle = "Find new adventures and learn new lessons across 6 uplifting categories:",
-  dStoriesImage = "/assets/designed-stories.png",
+  dStoriesImage = "/assets/dStoriesImage.png",
   ritualTitle = "3. Turn reading into their favorite ritual",
   ritualDesc = "When your child is the hero, storytime becomes their favorite habit.",
   ritualListHeading = "With Magic Story books, you nurture:",
