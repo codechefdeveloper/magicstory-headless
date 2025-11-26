@@ -18,13 +18,12 @@ export default function CtaSection({
   title = "Ready to See the Difference?",
   subtitle = "Join thousands of parents who've watched their kids transform from reluctant readers into storytime champions.",
   buttonLabel = "MAKE YOUR CHILD THE HERO",
-  guaranteeIcon = "/assets/money_back.svg",
+  guaranteeIcon = "/assets/icons/money_back.svg",
   guaranteeText = "30-day money back guarantee",
-  shippingIcon = "/assets/ships_globally.svg",
+  shippingIcon = "/assets/icons/ships_globally.svg",
   shippingText = "Ships in 3-5 days globally",
-  qualityIcon = "/assets/premium_quality.svg",
+  qualityIcon = "/assets/icons/premium_quality.svg",
   qualityText = "Premium hardcover quality",
-  bgImage = "/assets/cta-bg-img.png",
 }: CtaSectionProps) {
   return (
     <section aria-label="CTA section" className="w-full bg-[#141414] relative">
@@ -33,7 +32,6 @@ export default function CtaSection({
 
         {/* Background image using next/image for performance */}
         <div className="absolute inset-0 -z-10">
-          <Image src={bgImage} alt="cta background" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-black/50" />
         </div>
 
