@@ -27,10 +27,9 @@ export default function CtaSection({
   bgImage = "/assets/cta-bg-img.png",
 }: CtaSectionProps) {
   return (
-    <section aria-label="CTA section" className="w-full min-h-[90vh] bg-[#141414] px-4 py-10 relative">
-      <div className="max-w-7xl w-full mx-auto rounded-3xl px-6 py-20 text-center overflow-hidden relative"  style={{
-          backgroundImage: `url(${bgImage})`,
-        }}>
+    <section aria-label="CTA section" className="w-full min-h-[90vh] bg-[#141414] relative">
+      <div className="max-w-[1342px] mx-auto px-[16px]">
+        <div className="w-full mx-auto rounded-3xl px-6 py-20 text-center overflow-hidden relative bg-cover bg-center bg-[url('/assets/CTA-bg-img-mobile.png')] sm:bg-[url('/assets/CTA-bg-img-desktop.png')]">
 
         {/* Background image using next/image for performance */}
         <div className="absolute inset-0 -z-10">
@@ -38,9 +37,9 @@ export default function CtaSection({
           <div className="absolute inset-0 bg-black/50" />
         </div>
 
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">{title}</h2>
+        <h2 className="font-reddit font-extrabold text-white text-[28px] sm:text-[40px] leading-[130%] mb-[16px] sm:mb-[24px]">{title}</h2>
 
-        <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8">{subtitle}</p>
+        <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px] max-w-[580px]">{subtitle}</p>
         <button
             type="button"
             data-open-stepper-modal="true"
@@ -69,6 +68,8 @@ export default function CtaSection({
             </span>
           </button>
       </div>
+      </div>
+      
 
       <div className="max-w-6xl mx-auto mt-10 grid md:grid-cols-3 gap-6 text-center">
         <div className="flex items-center justify-center gap-2 font-semibold text-gray-200">

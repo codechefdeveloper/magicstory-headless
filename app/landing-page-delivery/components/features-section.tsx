@@ -249,7 +249,7 @@ export default function FeaturesSection({
         {/* Feature 6 */}
         <div className="grid md:grid-cols-2 gap-10 items-center bg-cover bg-center rounded-3xl relative py-[32px] sm:py-[48px] px-[16px] sm:px-[48px] bg-[url('/assets/keepshake-bg-mobile.png')] sm:bg-[url('/assets/bg_img-01.jpg')]" >
           <div>
-            <h3 className="font-reddit font-extrabold text-white text-[28px] sm:text-[36px] leading-[130%] mb-[16px] sm:mb-[24px]">{keepsakeTitle}</h3>
+            <h3 className="font-reddit font-extrabold text-white text-[28px] sm:text-[40px] leading-[130%] mb-[16px] sm:mb-[24px]">{keepsakeTitle}</h3>
             <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{keepsakeParaOne}</p>
             <p className="font-wix text-[#DADADA] text-[16px] sm:text-[18px] mb-[8px] sm:mb-[16px]">{keepsakeParaTwo}</p>
           </div>

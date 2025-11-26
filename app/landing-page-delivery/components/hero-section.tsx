@@ -24,7 +24,7 @@ export default function HeroSection({
                 <div className="lp-hero-inner bg-[url('/assets/hero-bg-img-mobile.png')] sm:bg-[url('/assets/hero-bg-img-desktop.png')] relative bg-no-repeat  bg-cover rounded-[24px] border border-[#4D4D4D] min-h-[740px] md:min-h-[640px] w-full flex 2xl:items-center 2xl:gap-12 2xl:px-[64px] px-[16px] py-[53px]">
           <div className="lp-hero-content text-white max-w-[630px]">
               <div className="flex items-center gap-2 mb-[16px]">
-              <div className="flex text-yellow-400 text-lg">⭐⭐⭐⭐⭐</div>
+              <div className="font-reddit flex text-yellow-400 text-lg">⭐⭐⭐⭐⭐</div>
               <a href='#' className="font-reddit text-[14px] sm:text-[16px] font-extrabold underline">4.9/5 from 2,847+ parents</a>
             </div>
             <h1 className="font-reddit font-extrabold text-[32px] sm:text-[38px] mb-[16px] leading-[42px] sm:leading-[48px]">{title}</h1>
