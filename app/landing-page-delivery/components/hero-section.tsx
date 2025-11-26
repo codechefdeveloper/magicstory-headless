@@ -13,8 +13,8 @@ export default function HeroSection({
   title = "6 Reasons to make your child the hero of their own story",
   subtitle = "Magic Story turns your child’s photo into the hero of a personalized storybook, helping them fall in love with reading.",
   backgroundImage = "/assets/hero-image.png",
-  daysIcon = "/assets/30-day.png",
-  shipsIcon = "/assets/Ships.png",
+  daysIcon = "/assets/money_back.svg",
+  shipsIcon = "/assets/ships_globally.svg",
   buttonLabel = "Learn more",
 }: HeroSectionProps) {
   return (
