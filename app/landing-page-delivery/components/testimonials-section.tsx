@@ -15,7 +15,7 @@ export default function TestimonialsSection({
   testimonialOne = "“My son actually wants to read now. He asks for his Magic Story instead of the iPad.”",
   testimonialTwo = "“It’s rare to find something fun that also feels important. This does both.”",
   testimonialThree = "“The quality is incredible, and my daughter’s face lit up when she saw herself on the page.”",
-  verifiedIcon = "/assets/verified.svg",
+  verifiedIcon = "/assets/icons/verified.svg",
 }: TestimonialsSectionProps) {
 
   const testimonials = [testimonialOne, testimonialTwo, testimonialThree];
